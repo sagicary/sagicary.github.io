@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Acme', sans-serif; }
+
+.center {
+  text-align: center; }
+
+.uno {
+  height: 100vh; }
+  .uno #video {
+    background-size: cover;
+    bottom: 0;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    right: 0;
+    width: auto;
+    z-index: -100; }
+  .uno h1 {
+    color: white;
+    font-weight: bold; }
+
+.texto {
+  padding-top: 150px; }
+  .texto p {
+    text-align: center;
+    color: white;
+    font-family: "Lobster";
+    font-size: 50px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 4s steps(60, end); }
+  .texto p:nth-child(2) {
+    animation: type2 8s steps(60, end); }
+  .texto p a {
+    color: lime;
+    text-decoration: none; }
+  .texto span {
+    animation: blink 1s infinite; }
+@keyframes type {
+  from {
+    width: 0; } }
+@keyframes type2 {
+  0% {
+    width: 0; }
+  50% {
+    width: 0; }
+  100% {
+    width: 100; } }
+@keyframes blink {
+  to {
+    opacity: .0; } }
+.dos {
+  background-color: #D09683;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .dos .yo {
+    height: 300px; }
+  .dos .descripcion {
+    padding: 50px; }
+    .dos .descripcion p {
+      color: #363237;
+      font-family: 'Acme', sans-serif;
+      font-size: 20px;
+      text-align: justify; }
+    .dos .descripcion .imgcentro {
+      text-align: center; }
+
+/*Estilos para Nav*/
+.btn-group-sm .btn-fab {
+  position: fixed !important;
+  right: 20px;
+  padding: 20px;
+  z-index: 10; }
+
+.btn-group .btn-fab {
+  position: fixed !important;
+  right: 20px;
+  padding: 20px;
+  z-index: 10; }
+
+#main {
+  position: fixed; }
+
+#home {
+  top: 60px; }
+
+#about {
+  top: 110px; }
+
+#conocimientos {
+  top: 160px; }
+
+#portafolio {
+  top: 210px; }
+
+#contacto {
+  top: 260px; }
+
+.fa {
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: lightblue;
+  width: 50px;
+  height: 50px;
+  padding: 15px; }
+
+.tres {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white; }
+  .tres h3 {
+    color: #363237;
+    font-family: 'Lobster';
+    font-size: 40px;
+    padding-bottom: 10px; }
+  .tres .devicon-html5-plain-wordmark {
+    font-size: 100px;
+    color: #2D4262;
+    padding: 10px; }
+  .tres .devicon-sass-original, .tres .devicon-bootstrap-plain-wordmark, .tres .devicon-photoshop-line, .tres .devicon-trello-plain-wordmark, .tres .devicon-slack-plain-wordmark, .tres .devicon-github-plain-wordmark, .tres .devicon-gulp-plain, .tres .devicon-nodejs-plain-wordmark, .tres .devicon-tomcat-line-wordmark, .tres .devicon-css3-plain-wordmark, .tres .devicon-javascript-plain, .tres .devicon-jquery-plain-wordmark, .tres .devicon-php-plain, .tres .devicon-mysql-plain-wordmark {
+    font-size: 100px;
+    color: #2D4262;
+    padding: 10px; }
+
+.espacio {
+  padding: 30px; }
+
+.cuatro {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #C8CFD9; }
+  .cuatro h3 {
+    color: #2D4262;
+    font-family: 'Lobster';
+    font-size: 40px;
+    padding: 10px; }
+  .cuatro div {
+    padding: 10px;
+    /*Para overlay*/ }
+    .cuatro div img {
+      width: 250px;
+      height: 250px; }
+    .cuatro div .image {
+      opacity: 1;
+      display: block;
+      width: 250px;
+      height: 250px;
+      transition: .5s ease;
+      backface-visibility: hidden; }
+    .cuatro div .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%); }
+    .cuatro div .cont:hover .image {
+      opacity: 0.3; }
+    .cuatro div .cont:hover .middle {
+      opacity: 1; }
+    .cuatro div .text {
+      background-color: #2D4262;
+      color: white;
+      font-size: 12px;
+      padding: -7px 10px; }
+      .cuatro div .text .fa {
+        font-size: 30px;
+        border-radius: 0px;
+        background-color: transparent;
+        padding: 15px; }
+      .cuatro div .text a {
+        color: white; }
+      .cuatro div .text a:hover {
+        color: #C8CFD9; }
+
+.cinco {
+  background-image: url("../assets/img/gato.gif");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  height: 60vh; }
+  .cinco h3 {
+    color: #2D4262;
+    font-family: 'Lobster';
+    font-size: 40px; }
+
+footer {
+  background-color: #2D4262;
+  padding: 10px; }
+  footer p {
+    color: white; }
+    footer p .fa-heart {
+      color: red;
+      background-color: #2D4262; }
+
+/*# sourceMappingURL=main.css.map */

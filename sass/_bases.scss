@@ -1,0 +1,237 @@
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Acme', sans-serif;
+}
+.center{
+	text-align: center;
+}
+.uno{
+	height: 100vh;
+	#video{
+		background-size: cover;
+	    bottom: 0;
+	    height: auto;
+	    min-height: 100%;
+	    min-width: 100%;
+	    position: fixed;
+	    right: 0;
+	    width: auto;
+	    z-index: -100;
+	}
+	h1{
+		color: $blanco;
+		font-weight: bold;
+	}
+}
+.texto{
+	padding-top: 150px;
+	p{
+	  text-align: center;
+	  color: $blanco; 
+	  font-family: "Lobster";
+	  font-size: 50px;
+	  margin: 10px 0 0 10px;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 100%;
+	  animation: type 4s steps(60, end); 
+	}
+	p:nth-child(2){
+	  animation: type2 8s steps(60, end);
+	}
+
+	p a{
+	  color: lime;
+	  text-decoration: none;
+	}
+
+	span{
+	  animation: blink 1s infinite;
+	}
+
+	@keyframes type{ 
+	  from { width: 0; } 
+	} 
+
+	@keyframes type2{
+	  0%{width: 0;}
+	  50%{width: 0;}
+	  100%{ width: 100; } 
+	} 
+
+	@keyframes blink{
+	  to{opacity: .0;}
+	}
+}
+
+.dos{
+	background-color: $rosa;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	.yo{
+		height: 300px;
+	}
+	.descripcion{
+		padding: 50px;
+		p{
+			color: $oscuro;
+			font-family: 'Acme', sans-serif;
+			font-size: 20px;
+			text-align: justify;
+		}
+		.imgcentro{
+			text-align: center;
+		}
+	}
+}
+/*Estilos para Nav*/
+.btn-group-sm .btn-fab{
+  position: fixed !important;
+  right: 20px;
+  padding: 20px;
+  z-index: 10;
+}
+.btn-group .btn-fab{
+  position: fixed !important;
+  right: 20px;
+  padding: 20px;
+  z-index: 10;
+}
+#main{
+	position: fixed;
+}
+#home{
+  top: 60px;
+}
+#about{
+  top: 110px;
+}
+#conocimientos{
+  top: 160px;
+}
+#portafolio{
+  top: 210px;
+}
+#contacto{
+  top: 260px;
+}
+.fa{
+	font-size: 20px;
+	border-radius: 50%;
+	background-color: lightblue;
+	width: 50px;
+	height: 50px;
+	padding: 15px;
+}
+
+.tres{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: $blanco;
+	h3{
+		color: $oscuro;
+		font-family: 'Lobster';
+		font-size: 40px;
+		padding-bottom: 10px;
+	}
+	.devicon-html5-plain-wordmark{
+		font-size: 100px;
+		color: $azul;
+		padding: 10px;
+	}
+	.devicon-sass-original, .devicon-bootstrap-plain-wordmark, .devicon-photoshop-line, .devicon-trello-plain-wordmark, .devicon-slack-plain-wordmark, .devicon-github-plain-wordmark, .devicon-gulp-plain, .devicon-nodejs-plain-wordmark, .devicon-tomcat-line-wordmark, .devicon-css3-plain-wordmark, .devicon-javascript-plain, .devicon-jquery-plain-wordmark, .devicon-php-plain, .devicon-mysql-plain-wordmark{
+		font-size: 100px;
+		color: $azul;
+		padding: 10px;
+	}
+}
+.espacio{
+	padding: 30px;
+}
+
+.cuatro{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: $celeste;
+	h3{
+		color: $azul;
+		font-family: 'Lobster';
+		font-size: 40px;
+		padding: 10px;
+	}
+	div{
+		padding: 10px;
+		img{
+			width: 250px;
+			height: 250px;
+		}
+		/*Para overlay*/
+		.image {
+		  opacity: 1;
+		  display: block;
+		  width: 250px;
+		  height: 250px;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+		.middle {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%)
+		}
+		.cont:hover .image {
+		  opacity: 0.3;
+		}
+		.cont:hover .middle {
+		  opacity: 1;
+		}
+		.text {
+		  background-color: $azul;
+		  color: white;
+		  font-size: 12px;
+		  padding: -7px 10px;
+		  .fa{
+		  	font-size: 30px;
+			border-radius: 0px;
+			background-color: transparent;
+			padding: 15px;
+		  }
+		  a{
+		  	color: $blanco;  	
+		  }
+		  a:hover{
+		  	color: $celeste;
+		  }
+		}
+	}
+}
+.cinco{
+	background-image: url('../assets/img/gato.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center top;
+	height: 60vh;
+	h3{
+		color: $azul;
+		font-family: 'Lobster';
+		font-size: 40px;
+	}
+}
+footer{
+	background-color: $azul;
+	padding: 10px;
+	p{
+		color: $blanco;
+		.fa-heart{
+			color: red;
+			background-color: $azul;
+		}
+	}
+}
+
