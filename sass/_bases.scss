@@ -20,11 +20,6 @@ body{
 	    width: auto;
 	    z-index: -100;
 	}
-	@media (max-width: 500px) {
-    body {
-        background-color: lightblue;
-    }
-}
 	h1{
 		color: $blanco;
 		font-weight: bold;
@@ -70,19 +65,46 @@ body{
 	  to{opacity: .0;}
 	}
 }
-
+@media (max-width: 768px) {
+    /* For mobile phones: */
+    .uno{
+    	background: url('../assets/fondo.jpg');
+    	background-size: cover;
+    	height: 45vh;
+    }
+    .texto{
+    	padding-top: 75px;
+    	p{
+	  text-align: center;
+	  color: $blanco; 
+	  font-family: "Lobster";
+	  font-size: 18px;
+	  margin: 10px 0 0 10px;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 100%;
+	  animation: type 4s steps(60, end); 
+		}
+    }
+}
 .dos{
-	background-color: $rosa;
+	background-color: $azul;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	.yo{
 		height: 300px;
+		border-radius: 10%;
 	}
 	.descripcion{
 		padding: 50px;
+		h3{
+			color: $blanco;
+			font-family: 'Lobster';
+		}
 		p{
-			color: $oscuro;
+			color: $blanco;
 			font-family: 'Acme', sans-serif;
+			font-weight: normal;
 			font-size: 20px;
 			text-align: justify;
 		}
@@ -234,7 +256,7 @@ body{
 }
 footer{
 	background-color: $azul;
-	padding: 10px;
+	padding: 5px;
 	p{
 		color: $blanco;
 		.fa-heart{
@@ -243,4 +265,6 @@ footer{
 		}
 	}
 }
+
+
 
