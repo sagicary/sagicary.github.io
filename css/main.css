@@ -19,6 +19,9 @@ body {
     right: 0;
     width: auto;
     z-index: -100; }
+  @media (max-width: 500px) {
+    .uno body {
+      background-color: lightblue; } }
   .uno h1 {
     color: white;
     font-weight: bold; }
@@ -70,6 +73,9 @@ body {
       text-align: justify; }
     .dos .descripcion .imgcentro {
       text-align: center; }
+      .dos .descripcion .imgcentro img {
+        width: 75px;
+        height: 75px; }
 
 /*Estilos para Nav*/
 .btn-group-sm .btn-fab {

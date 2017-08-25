@@ -20,6 +20,11 @@ body{
 	    width: auto;
 	    z-index: -100;
 	}
+	@media (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
 	h1{
 		color: $blanco;
 		font-weight: bold;
@@ -83,6 +88,10 @@ body{
 		}
 		.imgcentro{
 			text-align: center;
+			img{
+				width: 75px;
+				height: 75px;
+			}
 		}
 	}
 }
