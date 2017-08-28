@@ -7,8 +7,10 @@ body {
 .center {
   text-align: center; }
 
+/*SECCION UNO PRESENTACION*/
 .uno {
-  height: 100vh; }
+  height: 100vh;
+  /*VIDEO EN VERSION PC*/ }
   .uno #video {
     background-size: cover;
     bottom: 0;
@@ -24,7 +26,7 @@ body {
     font-weight: bold; }
 
 .texto {
-  padding-top: 150px; }
+  padding-top: 200px; }
   .texto p {
     text-align: center;
     color: white;
@@ -55,15 +57,17 @@ body {
 @keyframes blink {
   to {
     opacity: .0; } }
+/*MEDIA DE SECCION UNO*/
 @media (max-width: 768px) {
   /* For mobile phones: */
+  /*EN MOBILE TIENE SOLO FONDO, NO VIDEO*/
   .uno {
     background: url("../assets/fondo.jpg");
     background-size: cover;
     height: 45vh; }
 
   .texto {
-    padding-top: 65px; }
+    padding-top: 60px; }
     .texto p {
       text-align: center;
       color: white;
@@ -74,18 +78,23 @@ body {
       overflow: hidden;
       width: 100%;
       animation: type 4s steps(60, end); } }
+/*SECCION 2 SOBRE MI*/
 .dos {
   background-color: #2D4262;
   padding-top: 100px;
   padding-bottom: 100px; }
   .dos .yo {
     height: 300px;
-    border-radius: 10%; }
+    border-radius: 10%;
+    -moz-box-shadow: 0px 0px 30px white;
+    -webkit-box-shadow: 0px 0px 30px #FF0000;
+    box-shadow: 0px 0px 30px white; }
   .dos .descripcion {
     padding: 50px; }
     .dos .descripcion h3 {
       color: white;
-      font-family: 'Lobster'; }
+      font-family: 'Lobster';
+      font-size: 38px; }
     .dos .descripcion p {
       color: white;
       font-family: 'Acme', sans-serif;
@@ -104,6 +113,15 @@ body {
   right: 20px;
   padding: 20px;
   z-index: 10; }
+
+.btn-fab:hover {
+  border: none; }
+
+a:active {
+  border: none; }
+
+.btn-group-sm:hover {
+  border: none; }
 
 .btn-group .btn-fab {
   position: fixed !important;
@@ -137,12 +155,13 @@ body {
   height: 50px;
   padding: 15px; }
 
+/*SECCION TRES CONOCIMIENTOS*/
 .tres {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: white; }
   .tres h3 {
-    color: #363237;
+    color: #2D4262;
     font-family: 'Lobster';
     font-size: 40px;
     padding-bottom: 10px; }
@@ -158,15 +177,35 @@ body {
 .espacio {
   padding: 30px; }
 
+/*VERSION MOBILE SECCION 3*/
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  .espacio {
+    padding: 20px; }
+
+  .tres {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .tres h3 {
+      padding-bottom: 20px; }
+    .tres .devicon-html5-plain-wordmark {
+      font-size: 55px;
+      color: #2D4262;
+      padding: 5px; }
+    .tres .devicon-sass-original, .tres .devicon-bootstrap-plain-wordmark, .tres .devicon-photoshop-line, .tres .devicon-trello-plain-wordmark, .tres .devicon-slack-plain-wordmark, .tres .devicon-github-plain-wordmark, .tres .devicon-gulp-plain, .tres .devicon-nodejs-plain-wordmark, .tres .devicon-tomcat-line-wordmark, .tres .devicon-css3-plain-wordmark, .tres .devicon-javascript-plain, .tres .devicon-jquery-plain-wordmark, .tres .devicon-php-plain, .tres .devicon-mysql-plain-wordmark {
+      font-size: 55px;
+      color: #2D4262;
+      padding: 5px; } }
+/*SECCION 4 PORTAFOLIO*/
 .cuatro {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #C8CFD9; }
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #2D4262; }
   .cuatro h3 {
-    color: #2D4262;
+    color: white;
     font-family: 'Lobster';
     font-size: 40px;
-    padding: 10px; }
+    padding-bottom: 30px; }
   .cuatro div {
     padding: 10px;
     /*Para overlay*/ }
@@ -207,7 +246,9 @@ body {
       .cuatro div .text a:hover {
         color: #C8CFD9; }
 
+/*SECCION 5 CONTACTO*/
 .cinco {
+  padding-top: 40px;
   background-image: url("../assets/img/gato.gif");
   background-attachment: fixed;
   background-size: cover;
@@ -216,15 +257,26 @@ body {
   .cinco h3 {
     color: #2D4262;
     font-family: 'Lobster';
-    font-size: 40px; }
+    font-size: 40px;
+    padding-bottom: 180px; }
 
+/*MOBILE SECCION 5*/
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  .cinco {
+    padding-top: 20px; }
+    .cinco h3 {
+      padding-bottom: 100px; } }
+/*FOOTER*/
 footer {
   background-color: #2D4262;
-  padding: 5px; }
+  padding-top: 10px;
+  padding-bottom: 10px; }
   footer p {
     color: white; }
-    footer p .fa-heart {
-      color: red;
-      background-color: #2D4262; }
+  footer .corazon {
+    color: red;
+    font-size: 25px;
+    font-weight: bolder; }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,8 +7,10 @@ body{
 .center{
 	text-align: center;
 }
+/*SECCION UNO PRESENTACION*/
 .uno{
 	height: 100vh;
+	/*VIDEO EN VERSION PC*/
 	#video{
 		background-size: cover;
 	    bottom: 0;
@@ -26,7 +28,7 @@ body{
 	}
 }
 .texto{
-	padding-top: 150px;
+	padding-top: 200px;
 	p{
 	  text-align: center;
 	  color: $blanco; 
@@ -65,28 +67,31 @@ body{
 	  to{opacity: .0;}
 	}
 }
+/*MEDIA DE SECCION UNO*/
 @media (max-width: 768px) {
     /* For mobile phones: */
+    /*EN MOBILE TIENE SOLO FONDO, NO VIDEO*/
     .uno{
     	background: url('../assets/fondo.jpg');
     	background-size: cover;
     	height: 45vh;
     }
     .texto{
-    	padding-top: 65px;
+    	padding-top: 60px;
     	p{
-	  text-align: center;
-	  color: $blanco; 
-	  font-family: "Lobster";
-	  font-size: 18px;
-	  margin: 10px 0 0 10px;
-	  white-space: nowrap;
-	  overflow: hidden;
-	  width: 100%;
-	  animation: type 4s steps(60, end); 
+		  text-align: center;
+		  color: $blanco; 
+		  font-family: "Lobster";
+		  font-size: 18px;
+		  margin: 10px 0 0 10px;
+		  white-space: nowrap;
+		  overflow: hidden;
+		  width: 100%;
+		  animation: type 4s steps(60, end); 
 		}
     }
 }
+/*SECCION 2 SOBRE MI*/
 .dos{
 	background-color: $azul;
 	padding-top: 100px;
@@ -94,12 +99,16 @@ body{
 	.yo{
 		height: 300px;
 		border-radius: 10%;
+		-moz-box-shadow: 0px 0px 30px $blanco;  
+        -webkit-box-shadow: 0px 0px 30px #FF0000;  
+        box-shadow: 0px 0px 30px $blanco; 
 	}
 	.descripcion{
 		padding: 50px;
 		h3{
 			color: $blanco;
 			font-family: 'Lobster';
+			font-size: 38px;
 		}
 		p{
 			color: $blanco;
@@ -123,6 +132,15 @@ body{
   right: 20px;
   padding: 20px;
   z-index: 10;
+}
+.btn-fab:hover{
+	border: none;
+}
+a:active{
+	border: none;
+}
+.btn-group-sm:hover {
+	border: none;
 }
 .btn-group .btn-fab{
   position: fixed !important;
@@ -156,13 +174,13 @@ body{
 	height: 50px;
 	padding: 15px;
 }
-
+/*SECCION TRES CONOCIMIENTOS*/
 .tres{
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: $blanco;
 	h3{
-		color: $oscuro;
+		color: $azul;
 		font-family: 'Lobster';
 		font-size: 40px;
 		padding-bottom: 10px;
@@ -181,16 +199,40 @@ body{
 .espacio{
 	padding: 30px;
 }
-
-.cuatro{
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: $celeste;
-	h3{
+/*VERSION MOBILE SECCION 3*/
+@media (max-width: 768px) {
+    /* For mobile phones: */
+    .espacio{
+		padding: 20px;
+    }
+    .tres{
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+    	h3{
+    		padding-bottom: 20px;
+    	}
+    	.devicon-html5-plain-wordmark{
+		font-size: 55px;
 		color: $azul;
+		padding: 5px;
+	}
+	.devicon-sass-original, .devicon-bootstrap-plain-wordmark, .devicon-photoshop-line, .devicon-trello-plain-wordmark, .devicon-slack-plain-wordmark, .devicon-github-plain-wordmark, .devicon-gulp-plain, .devicon-nodejs-plain-wordmark, .devicon-tomcat-line-wordmark, .devicon-css3-plain-wordmark, .devicon-javascript-plain, .devicon-jquery-plain-wordmark, .devicon-php-plain, .devicon-mysql-plain-wordmark{
+		font-size: 55px;
+		color: $azul;
+		padding: 5px;
+		}
+    }
+}
+/*SECCION 4 PORTAFOLIO*/
+.cuatro{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: $azul;
+	h3{
+		color: $blanco;
 		font-family: 'Lobster';
 		font-size: 40px;
-		padding: 10px;
+		padding-bottom: 30px;
 	}
 	div{
 		padding: 10px;
@@ -242,7 +284,9 @@ body{
 		}
 	}
 }
+/*SECCION 5 CONTACTO*/
 .cinco{
+	padding-top: 40px;
 	background-image: url('../assets/img/gato.gif');
 	background-attachment: fixed;
 	background-size: cover;
@@ -252,19 +296,30 @@ body{
 		color: $azul;
 		font-family: 'Lobster';
 		font-size: 40px;
+		padding-bottom: 180px;
 	}
 }
+/*MOBILE SECCION 5*/
+@media (max-width: 768px) {
+    /* For mobile phones: */
+    .cinco{
+    	padding-top: 20px;
+	    h3{
+	    	padding-bottom: 100px;
+	    }
+    }
+}
+/*FOOTER*/
 footer{
 	background-color: $azul;
-	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	p{
 		color: $blanco;
-		.fa-heart{
-			color: red;
-			background-color: $azul;
-		}
+	}
+	.corazon{
+		color: red;
+		font-size: 25px;
+		font-weight: bolder;
 	}
 }
-
-
-
