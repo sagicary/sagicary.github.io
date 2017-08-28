@@ -189,19 +189,19 @@ a:active{
 	padding-bottom: 50px;
 	background-color: $blanco;
 	h3{
-		color: $azul;
+		color: $morado;
 		font-family: 'Lobster';
 		font-size: 40px;
 		padding-bottom: 10px;
 	}
 	.devicon-html5-plain-wordmark{
 		font-size: 100px;
-		color: $azul;
+		color: $morado;
 		padding: 10px;
 	}
 	.devicon-sass-original, .devicon-bootstrap-plain-wordmark, .devicon-photoshop-line, .devicon-trello-plain-wordmark, .devicon-slack-plain-wordmark, .devicon-github-plain-wordmark, .devicon-gulp-plain, .devicon-nodejs-plain-wordmark, .devicon-tomcat-line-wordmark, .devicon-css3-plain-wordmark, .devicon-javascript-plain, .devicon-jquery-plain-wordmark, .devicon-php-plain, .devicon-mysql-plain-wordmark{
 		font-size: 100px;
-		color: $azul;
+		color: $morado;
 		padding: 10px;
 	}
 }
@@ -222,12 +222,12 @@ a:active{
     	}
     	.devicon-html5-plain-wordmark{
 		font-size: 55px;
-		color: $azul;
+		color: $morado;
 		padding: 5px;
 	}
 	.devicon-sass-original, .devicon-bootstrap-plain-wordmark, .devicon-photoshop-line, .devicon-trello-plain-wordmark, .devicon-slack-plain-wordmark, .devicon-github-plain-wordmark, .devicon-gulp-plain, .devicon-nodejs-plain-wordmark, .devicon-tomcat-line-wordmark, .devicon-css3-plain-wordmark, .devicon-javascript-plain, .devicon-jquery-plain-wordmark, .devicon-php-plain, .devicon-mysql-plain-wordmark{
 		font-size: 55px;
-		color: $azul;
+		color: $morado;
 		padding: 5px;
 		}
     }
@@ -296,16 +296,20 @@ a:active{
 /*SECCION 5 CONTACTO*/
 .cinco{
 	padding-top: 40px;
-	background-image: url('../assets/img/gato.gif');
+	/*background-image: url('../assets/img/gato.gif');*/
+	background-color: white;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center top;
 	height: 60vh;
 	h3{
-		color: $azul;
+		color: $morado;
 		font-family: 'Lobster';
 		font-size: 40px;
-		padding-bottom: 180px;
+		padding-bottom: 30px;
+	}
+	.contacto{
+		padding-bottom: 20px;
 	}
 }
 /*MOBILE SECCION 5*/

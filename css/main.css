@@ -166,17 +166,17 @@ a:active {
   padding-bottom: 50px;
   background-color: white; }
   .tres h3 {
-    color: #2D4262;
+    color: #794f92;
     font-family: 'Lobster';
     font-size: 40px;
     padding-bottom: 10px; }
   .tres .devicon-html5-plain-wordmark {
     font-size: 100px;
-    color: #2D4262;
+    color: #794f92;
     padding: 10px; }
   .tres .devicon-sass-original, .tres .devicon-bootstrap-plain-wordmark, .tres .devicon-photoshop-line, .tres .devicon-trello-plain-wordmark, .tres .devicon-slack-plain-wordmark, .tres .devicon-github-plain-wordmark, .tres .devicon-gulp-plain, .tres .devicon-nodejs-plain-wordmark, .tres .devicon-tomcat-line-wordmark, .tres .devicon-css3-plain-wordmark, .tres .devicon-javascript-plain, .tres .devicon-jquery-plain-wordmark, .tres .devicon-php-plain, .tres .devicon-mysql-plain-wordmark {
     font-size: 100px;
-    color: #2D4262;
+    color: #794f92;
     padding: 10px; }
 
 .espacio {
@@ -195,11 +195,11 @@ a:active {
       padding-bottom: 20px; }
     .tres .devicon-html5-plain-wordmark {
       font-size: 55px;
-      color: #2D4262;
+      color: #794f92;
       padding: 5px; }
     .tres .devicon-sass-original, .tres .devicon-bootstrap-plain-wordmark, .tres .devicon-photoshop-line, .tres .devicon-trello-plain-wordmark, .tres .devicon-slack-plain-wordmark, .tres .devicon-github-plain-wordmark, .tres .devicon-gulp-plain, .tres .devicon-nodejs-plain-wordmark, .tres .devicon-tomcat-line-wordmark, .tres .devicon-css3-plain-wordmark, .tres .devicon-javascript-plain, .tres .devicon-jquery-plain-wordmark, .tres .devicon-php-plain, .tres .devicon-mysql-plain-wordmark {
       font-size: 55px;
-      color: #2D4262;
+      color: #794f92;
       padding: 5px; } }
 /*SECCION 4 PORTAFOLIO*/
 .cuatro {
@@ -254,16 +254,19 @@ a:active {
 /*SECCION 5 CONTACTO*/
 .cinco {
   padding-top: 40px;
-  background-image: url("../assets/img/gato.gif");
+  /*background-image: url('../assets/img/gato.gif');*/
+  background-color: white;
   background-attachment: fixed;
   background-size: cover;
   background-position: center top;
   height: 60vh; }
   .cinco h3 {
-    color: #2D4262;
+    color: #794f92;
     font-family: 'Lobster';
     font-size: 40px;
-    padding-bottom: 180px; }
+    padding-bottom: 30px; }
+  .cinco .contacto {
+    padding-bottom: 20px; }
 
 /*MOBILE SECCION 5*/
 @media (max-width: 768px) {
