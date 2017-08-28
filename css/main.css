@@ -107,6 +107,11 @@ body {
         width: 75px;
         height: 75px; }
 
+/*MOBILE SECCION 2*/
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  .dos .descripcion {
+    padding: 30px; } }
 /*Estilos para Nav*/
 .btn-group-sm .btn-fab {
   position: fixed !important;
